@@ -1,0 +1,275 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: "Indie Flower", system-ui;
+
+}
+#container{
+    width: 100%;
+    height: 100vh;
+    position: relative;
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+.logo{
+    width: 500px;
+}
+.list-items{
+    list-style: none;
+    display: inline;
+    margin: 0px 30px;
+    font-size: 100px;
+    font-weight: 1000;
+    
+}
+.links{
+    text-decoration: none;
+    color: black;
+    font-weight: 600;
+    font-size: 25px;
+}
+.links:hover{
+    color: red;
+    text-decoration: underline;
+}
+.homeContent{
+    margin: 15% 0px 8%;
+    margin-left: 30px;
+    margin-bottom: 60px;
+}
+#userName{
+    font-size: 50px;
+    margin-bottom: 20px;
+    font-family: "Indie Flower", cursive;
+    margin-left: 100px;
+    font-size: 100px;
+}
+#name{
+    font-family: "Indie Flower", cursive;
+     color: orange;
+     margin-left: 10px;
+     font-size: 100px;
+}
+#userDetais{
+    line-height: 2;
+    margin-left: 100px;
+    font-size: 30px;
+}
+#downLord{
+    text-decoration: none;
+    background-color: black;
+    color: #fff;
+    padding: 10px;
+    border-radius: 10px;
+    display: inline-block;
+    margin-top: 30px;
+    margin-left: 100px;
+    font-size: 40px;
+}
+.homeImage{
+    width: 45%;
+    height: 75%;
+    position: absolute;
+    right: 300px;
+    bottom: 0px;
+}
+.group1{
+    position: absolute;
+    height: 100%;
+    bottom: 0px;
+    left: 50%;
+    transform: translateX(-50%);
+    transition: bottom 2s,left 1.5s;
+}
+.homeImage:hover #shape{
+    bottom: 80px;
+}
+.homeImage:hover #girl{
+    left: 20%;
+
+}
+#about{
+    margin: 15% 8% 0px 8%;
+}
+.sectionHead{
+    text-align: center;
+}
+.mainHead{
+    font-size: 50px;
+    font-family: "Merriweather", system-ui;
+}
+.subHead{
+    font-size: 30px;
+    color: green;
+    
+}
+.aboutBody{
+    margin-top: 30px;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 50px;
+    display: flex;
+    font-size: 27px;
+    flex-direction: column;
+    justify-content: right;
+    width:100%;
+    
+}
+
+    .aboutContent{
+    display: flex;
+    font-size: 20px;
+    text-align: justify;
+    
+    flex-direction: row;
+
+}
+.informations{
+    margin-top: 1.3rem;
+}
+.info-box{
+    margin-bottom: 10px;
+}
+.info-box>span{
+    margin-left: 10px; 
+}
+
+.aboutImage{
+    width: 80%;
+    
+    
+}
+.img1{
+    margin-left: 250px;
+}
+
+
+#skills{
+    width: 8% 8% 0% 8%;
+}
+.skillsContent{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    align-items: center;
+    gap: 2rem;
+    margin-top: 20px;
+}
+.bars{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    padding: 1rem 0px;
+}
+.barHead, .barPersontage{
+    font-weight: 500;
+    font-size: 2rem;
+}
+.baseBar{
+    width: 100%;
+    height: 1rem;
+    background-color: black;
+    border-radius: 10px;
+    position: absolute;
+    bottom: 0px;
+}
+.htmlBar{
+    width: 89%;
+    background-color: orange;
+}
+.cssBar{
+    background-color: orange;
+    width: 80%;
+}
+.jsBar{
+    background-color: orange;
+    width: 79%;
+
+}
+.reactBar{
+    background-color: orange;
+    width: 70%;
+}
+  
+
+#contact{
+    margin: 8% 8% 0% 8%;
+}
+.iconCollection{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5%;
+}
+.icon{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0px 10px;
+}
+.brands{
+    color: black;
+    font-size: 3rem;
+}
+.icon:hover{
+    background-image: linear-gradient(to bottom right, red, yellow);
+}
+.icon:hover .brands{
+    color: #fff;
+    animation: rotate 3s;
+}
+@keyframes rotate{
+    0%{
+        transform: rotate(40deg);
+    }
+    20%{
+        transform: rotate(-40deg);
+    }
+    40%{
+        transform: rotate(40deg);
+    }
+    60%{
+        transform: rotate(-40deg);
+    }
+    80%{
+        transform: rotate(40deg);
+    }
+    100%{
+        transform: rotate(-40deg);
+    }
+}
+footer{
+    margin: 8% 0% 0% 0%;
+}
+#copyRight{
+    text-align: center;
+    font-weight: 600;
+    font-size: 30px;
+}
+.uparrow{
+    float: right;
+    margin-top: -40px;
+    margin-right: 70px;
+}
+::-webkit-scrollbar{
+    width: 20px;
+}
+::-webkit-scrollbar-track{
+    background-color: beige;
+}
+::-webkit-scrollbar-thumb{
+    background-color: orange;
+    border-radius: 10px;
+
+}
+html{
+    scroll-behavior: smooth;
+}
